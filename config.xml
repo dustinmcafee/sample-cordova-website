@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--suppress ALL -->
+<widget id="com.elotouch.ic.webviewcontroller" version="3.52.10" versionCode="1010" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.elotouch.ic.webviewcontroller.cordovaPlugins.barcodeScanner.BarcodeScanner" />
+    </feature>
+    <feature name="ZebraBCR">
+        <param name="android-package" value="com.elotouch.ic.webviewcontroller.cordovaPlugins.zebraBCR.ZebraBCR" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="com.elotouch.ic.webviewcontroller.cordovaPlugins.device.Device" />
+    </feature>
+    <feature name="Printer">
+        <param name="android-package" value="de.appplant.cordova.plugin.printer.Printer" />
+    </feature>
+    <name>WebViewController</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dustin.mcafee@elotouch.com">
+        Elo Touch Solutions
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="android-compileSdkVersion" value="29" />
+    <preference name="xwalkVersion" value="23+" />
+</widget>
